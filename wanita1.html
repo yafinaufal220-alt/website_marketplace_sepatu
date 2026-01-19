@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanita - FSC-O</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 220px;
+            height: 100%;
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .sidebar a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Content area */
+        .main-content {
+            margin-left: 240px;
+            padding: 20px;
+        }
+
+        /* Tombol navigasi halaman */
+        .page-nav {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+        .page-nav a {
+            padding: 10px 20px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .page-nav a:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Kategori</h3>
+        <a href="pria.html">Pria</a>
+        <a href="wanita.html">Wanita</a>
+        <a href="anak.html">Anak-anak</a>
+        <a href="sale.html">Sale</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Produk Wanita</h1>
+
+        <div class="grid">
+            <div class="product-card">
+                <img src="img/field-general.avif" alt="Nike Field General">
+                <h3>Nike Field General</h3>
+                <p class="price">Rp 1.909.000</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/airmax-dn8.avif" alt="Nike Air Max Dn8">
+                <h3>Nike Air Max Dn8</h3>
+                <p class="price">Rp 3.169.000</p>
+            </div>
+        </div>
+
+        <!-- Navigasi Halaman -->
+        <div class="page-nav">
+            <a href="wanita.html">Kembali ke Halaman Sebelumnya</a>
+            <a href="belum diisi">Lanjut ke Halaman Selanjutnya</a>
+        </div>
+    </div>
+
+</body>
+</html>

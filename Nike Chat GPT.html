@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC-O</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div id="searchBox" style="
+            display:none;
+            padding:10px;
+            background:#f5f5f5;
+            text-align:center;">
+            <input type="text" id="searchInput" placeholder="Cari produk..." 
+            style="padding:8px; width:80%; font-size:16px;">
+        </div>
+
+        <div class="logo">FSC-O</div>
+            <ul class="nav-links">
+                <li><a href="pria.html">Pria</a></li>
+                <li><a href="wanita.html">Wanita</a></li>
+                <li><a href="anak.html">Anak-anak</a></li>
+                <li><a href="sale.html">Sale</a></li>
+            </ul>
+        <div class="nav-icons">
+            <span id="searchIcon" style="cursor:pointer;">🔍</span>
+            <span id="cartIcon" style="cursor:pointer;">🛒</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Koleksi Terbaru</h1>
+            <p>Temukan gaya terbaikmu hari ini.</p>
+            <a href="belanja.html" class="btn">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <h2>Produk Unggulan</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="ACG+ZOOM+GAIADOME+GTX+SE.avif" alt="Nike Field General">
+                <h3>Nike Field General</h3>
+                <p class="price">Rp 1.909.000</p>
+            </div>
+
+            <div class="product-card">
+                <img src="AIR+MAX+DN8+QS.avif" alt="Nike Air Max Dn8">
+                <h3>Nike Air Max Dn8</h3>
+                <p class="price">Rp 3.169.000</p>
+            </div>
+
+            <div class="product-card">
+                <img src="AIR+MAX+TL+2.5.avif" alt="Nike Air Max TL 2.5">
+                <h3>Nike Air Max TL 2.5</h3>
+                <p class="price">Rp 2.849.000</p>
+            </div>
+
+            <div class="product-card">
+                <img src="NIKE+SHOX+RIDE+2.avif" alt="Nike Shox Ride 2">
+                <h3>Nike Shox Ride 2</h3>
+                <p class="price">Rp 2.669.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT (dipindahkan ke bawah agar berfungsi) -->
+    <script>
+        // Klik ikon pencarian
+        document.getElementById("searchIcon").addEventListener("click", () => {
+            const box = document.getElementById("searchBox");
+            box.style.display = box.style.display === "none" ? "block" : "none";
+            document.getElementById("searchInput").focus();
+        });
+
+        // Klik ikon keranjang
+        document.getElementById("cartIcon").addEventListener("click", () => {
+            window.location.href = "cart.html"; // Ganti ke halaman keranjang kamu
+        });
+    </script>
+
+</body>
+</html>
